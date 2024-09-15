@@ -15,13 +15,13 @@ Then, interactively solve any conflicts.
 
 Development
 ===========
-Currently, there are two directories: macos-temp and linux-temp. They are to be merged into nvim by analysing the files and logically ordering the function calls.
+Currently, there are two branches: macos and linux. They will be merged when I have time by pulling macos into a tempdir then cross-referencing the configs that I want and making everything nice and compartmentalised.
 
 The scrolling feature should be refactored so that it is called with .setup(min, max) and copied into a separate Git repository.
 
 Branches
 ========
-There is a branch called ‘jacko-png’. At the moment the only non-portable functions are the ones that create the Google Drive and iCloud Drive shortcuts.
+There should be a branch called ‘jacko-png’. It contains commands that you wouldn't want. At the moment the only non-portable functions are the ones that create the Google Drive and iCloud Drive shortcuts.
 
 Platform-specific
 =================
