@@ -7,10 +7,11 @@ It is very bare-bones and focusses on integrating the mouse (<S-ScrollWheel> and
 Installation
 ============
 
+`cd ~/proj`
 `git clone git@github.com:jacko-png/nvim-configs`
-`cp -ir nvim-configs/nvim ~/.config/nvim`
+`cp -ir nvim-configs ~/.config/nvim`
 
-Then, interactively solve any conflicts.
+Then, interactively solve any conflicts. You will likely have to concatenate any init.lua files.
 
 
 Development
