@@ -4,8 +4,11 @@ vim.opt.shiftwidth = 4
 vim.cmd('command! EditConfig e ~/.config/nvim')
 -- vim.cmd.command('')
 vim.g.netrw_keepdir = false
+vim.g.netrw_hide = true
+vim.g.netrw_list_hide = [[\.DS_Store,\.Trash.+,lost\+found]]
 
--- something like this works in the Linux configs.
+-- TODO: linebreak autocmd
+
 local function toggle_word_wrap(wrap_state)
 	vim.api.nvim_notify("wrap_state: " .. tostring(wrap_state) .. " vim.opt.wrap: "..  tostring(vim.opt.wrap), 0 , {})
 	vim.opt.wrap = not wrap_state
